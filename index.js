@@ -63,7 +63,7 @@ const makeCommit = n =>{
     if(n===0) return simpleGit().push();
     const x = random.randomInt(0,51);
     const y = random.randomInt(0,6)
-    const DATE = moment().subtract(2.5, 'y').add(1, 'd')
+    const DATE = moment().subtract(1, 'y').add(1, 'd')
                      .add(x, 'w').add(y, 'd').format();
 
     const data = {
